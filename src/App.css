@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-logo {
@@ -26,6 +28,42 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.control-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+.control-cell {
+  border: 1px solid white;
+  background-color: gray;
+  color: white;
+}
+
+.control-cell td {
+  text-align: left;
+}
+
+.control-cell input {
+  width: 300px;
+}
+
+.element {
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.element:hover {
+  border: 2px solid red;
+  background-color: blue;
+  color: white;
+}
+
+.selected {
+  background-color: #00FFFF;
 }
 
 @keyframes App-logo-spin {
